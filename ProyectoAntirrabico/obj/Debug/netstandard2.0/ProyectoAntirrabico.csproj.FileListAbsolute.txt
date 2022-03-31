@@ -1,0 +1,16 @@
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\bin\Debug\netstandard2.0\ProyectoAntirrabico.deps.json
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\bin\Debug\netstandard2.0\ProyectoAntirrabico.dll
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\bin\Debug\netstandard2.0\ProyectoAntirrabico.pdb
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.csproj.AssemblyReference.cache
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\InsercionMascotas.xaml.g.cs
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.AssemblyInfoInputs.cache
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.AssemblyInfo.cs
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.csproj.CoreCompileInputs.cache
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.dll
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\refint\ProyectoAntirrabico.dll
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.pdb
+D:\Proyecto\ProyectoAntirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ref\ProyectoAntirrabico.dll
