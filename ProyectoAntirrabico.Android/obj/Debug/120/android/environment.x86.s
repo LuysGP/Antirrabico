@@ -2,8 +2,8 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.companyname.proyectoantirrabico"
-	.size	.L.env.str.1, 36
+	.asciz	"com.ingesoftaware.mascotas"
+	.size	.L.env.str.1, 27
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	2
@@ -84,7 +84,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"ba73c11d-2b22-4769-8d54-fb80020ecfc7"
+	.asciz	"5799e8b4-7eda-4e21-b12f-9a481201e733"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
