@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ProyectoAntirrabico.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class InsercionMascotas : ContentPage
+    public partial class FormMascotasPerdidas : ContentPage
     {
-        public InsercionMascotas()
+        public FormMascotasPerdidas()
         {
             InitializeComponent();
         }
