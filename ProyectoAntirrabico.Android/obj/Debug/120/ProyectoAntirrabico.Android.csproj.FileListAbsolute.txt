@@ -1261,3 +1261,13 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Andr
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Reactive.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\add.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\adoptardog.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\camera.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\cancel.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\home.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\lock.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\save.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\user.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\logo.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\logoajustado.png
