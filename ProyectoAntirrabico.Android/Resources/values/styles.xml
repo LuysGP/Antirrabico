@@ -15,4 +15,20 @@
          which is used to tint widgets -->
     <item name="colorAccent">@color/colorAccent</item>
   </style>
+
+  <!--CREACION DE UN NUEVO TEMA NECESARIA PARA LA SPLASHSCREEN-->
+  <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--PROPIEDAD QUE MUESTRA EL TEMA CREADO-->
+    <item name="android:windowBackground">@drawable/splash</item>
+
+    <!--PROPIEDAD QUE IMPIDE QUE SE MUESTREN TITULOS-->
+    <item name="android:windowNoTitle">true</item>
+
+    <!--PROPIEDAD QUE HACE QUE EL SPLASH SE MUESTRE EN TODA LA PANTALLA-->
+    <item name="android:windowFullscreen">true</item>
+
+    <item name="android:windowContentOverlay">@null</item>
+
+    <item name="android:windowActionBar">true</item>
+  </style>
 </resources>

@@ -29,3 +29,4 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ProyectoAntirrabico.pdb
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\ref\ProyectoAntirrabico.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\FormMascotasPerdidas.xaml.g.cs
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\FormRegistroAdmin.xaml.g.cs

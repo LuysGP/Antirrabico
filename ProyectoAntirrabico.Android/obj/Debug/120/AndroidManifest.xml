@@ -11,7 +11,8 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="Zoolo+cotas" android:theme="@style/MainTheme" android:icon="@mipmap/ic_launcher" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme" android:name="crc642089de41555e8a3a.MainActivity" android:exported="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme" android:name="crc642089de41555e8a3a.MainActivity" />
+    <activity android:configChanges="screenSize" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/SplashTheme" android:name="crc642089de41555e8a3a.SplashScreen" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

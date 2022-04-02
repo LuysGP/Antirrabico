@@ -16,7 +16,8 @@
     </intent>
   </queries>
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme">
-    <activity android:name="crc642089de41555e8a3a.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme">
+    <activity android:name="crc642089de41555e8a3a.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme" />
+    <activity android:name="crc642089de41555e8a3a.SplashScreen" android:configChanges="screenSize" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/SplashTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

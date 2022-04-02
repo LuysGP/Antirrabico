@@ -1267,3 +1267,17 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Andr
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\mipmap-xhdpi\ic_launcher.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\mipmap-xxhdpi\ic_launcher.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\com\ingesoftaware\mascotas\R.java
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\Firebase.Auth.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Collections.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Diagnostics.Debug.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Linq.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Reflection.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Reflection.Extensions.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Runtime.Serialization.Primitives.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Text.Encoding.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Threading.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Threading.Tasks.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\iconosplash.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\splash.xml
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc642089de41555e8a3a\SplashScreen.java
