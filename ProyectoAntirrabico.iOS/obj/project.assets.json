@@ -1640,25 +1640,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fernando Cano\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\luis_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico.iOS\\ProyectoAntirrabico.iOS.csproj",
+      "projectUniqueName": "D:\\Proyecto\\ProyectoAntirrabico\\Antirrabico\\ProyectoAntirrabico.iOS\\ProyectoAntirrabico.iOS.csproj",
       "projectName": "ProyectoAntirrabico.iOS",
-      "projectPath": "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico.iOS\\ProyectoAntirrabico.iOS.csproj",
-      "packagesPath": "C:\\Users\\Fernando Cano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico.iOS\\obj\\",
+      "projectPath": "D:\\Proyecto\\ProyectoAntirrabico\\Antirrabico\\ProyectoAntirrabico.iOS\\ProyectoAntirrabico.iOS.csproj",
+      "packagesPath": "C:\\Users\\luis_\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyecto\\ProyectoAntirrabico\\Antirrabico\\ProyectoAntirrabico.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Fernando Cano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\luis_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1671,8 +1666,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico\\ProyectoAntirrabico.csproj": {
-              "projectPath": "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico\\ProyectoAntirrabico.csproj"
+            "D:\\Proyecto\\ProyectoAntirrabico\\Antirrabico\\ProyectoAntirrabico\\ProyectoAntirrabico.csproj": {
+              "projectPath": "D:\\Proyecto\\ProyectoAntirrabico\\Antirrabico\\ProyectoAntirrabico\\ProyectoAntirrabico.csproj"
             }
           }
         }
