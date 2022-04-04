@@ -7,6 +7,10 @@ namespace ProyectoAntirrabico.Conexion
 {
     public class CConexion
     {
-        public static FirebaseClient fireBase = new FirebaseClient("https://appmascotas-f970f-default-rtdb.firebaseio.com/");
+        //El constructor va a contener la conexion a la base de datos.
+        public CConexion()
+        {
+            FirebaseClient fireBase = new FirebaseClient("https://appmascotas-f970f-default-rtdb.firebaseio.com/");
+        }
     }
 }
