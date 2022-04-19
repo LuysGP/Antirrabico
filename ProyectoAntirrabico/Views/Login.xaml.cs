@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ProyectoAntirrabico.ViewModel;
 
 namespace ProyectoAntirrabico.Views
 {
@@ -15,6 +16,7 @@ namespace ProyectoAntirrabico.Views
         public Login()
         {
             InitializeComponent();
+            BindingContext = new VMLogin(Navigation);
         }
     }
 }
