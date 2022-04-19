@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAntirrabico.Views.Login"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="logo.png"
+                   HeightRequest="250"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         Margin="0,50,0,0">
+                <Image Source="user.png"
+                       HeightRequest="40"
+                       />
+                <Entry Placeholder="Usuario"
+                       WidthRequest="280"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         Margin="0,20,0,0">
+                <Image Source="lock.png"
+                       HeightRequest="40"/>
+                <Entry Placeholder="Contraseña"
+                       WidthRequest="280"
+                       FontSize="20"
+                       IsPassword="True"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,125,0,0">
+                
+                <Button Text="Iniciar sesión"
+                    TextColor="#F18043"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3C4562"
+                    HorizontalOptions="Center"
+                    WidthRequest="183"
+                    CornerRadius="10"/>
+
+                <Button Text="Registrarse"
+                    TextColor="#F18043"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    BorderColor="#F18043"
+                    BorderWidth="3"
+                    WidthRequest="183"
+                    CornerRadius="10"
+                    Margin="10"/>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
