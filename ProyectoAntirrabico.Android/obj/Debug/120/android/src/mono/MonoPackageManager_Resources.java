@@ -3,15 +3,13 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ProyectoAntirrabico.Android.dll" comes first in this list. */
 		"ProyectoAntirrabico.Android.dll",
-		"CommonServiceLocator.dll",
 		"Firebase.Auth.dll",
 		"Firebase.dll",
 		"FormsViewGroup.dll",
-		"GalaSoft.MvvmLight.dll",
-		"GalaSoft.MvvmLight.Extras.dll",
-		"GalaSoft.MvvmLight.Platform.dll",
 		"LiteDB.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Media.dll",
 		"ProyectoAntirrabico.dll",
 		"System.Reactive.dll",
 		"Xamarin.AndroidX.Activity.dll",

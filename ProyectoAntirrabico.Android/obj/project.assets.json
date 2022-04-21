@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v12.0": {
-      "CommonServiceLocator/2.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/CommonServiceLocator.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CommonServiceLocator.dll": {}
-        }
-      },
       "FirebaseAuthentication.net/3.7.2": {
         "type": "package",
         "dependencies": {
@@ -51,22 +42,6 @@
           "lib/netstandard2.0/LiteDB.dll": {}
         }
       },
-      "MvvmLightLibs/5.4.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.2"
-        },
-        "compile": {
-          "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll": {},
-          "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll": {},
-          "lib/monoandroid1/GalaSoft.MvvmLight.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll": {},
-          "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll": {},
-          "lib/monoandroid1/GalaSoft.MvvmLight.dll": {}
-        }
-      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -74,6 +49,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.CurrentActivity/2.1.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -122,6 +109,22 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Core": "1.1.0",
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Plugin.Media.dll": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -1659,8 +1662,8 @@
         "dependencies": {
           "FirebaseAuthentication.net": "3.7.2",
           "FirebaseDatabase.net": "4.0.7",
-          "MvvmLightLibs": "5.4.1.1",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -1674,23 +1677,6 @@
     }
   },
   "libraries": {
-    "CommonServiceLocator/2.0.2": {
-      "sha512": "OeAz2cDGiQuaxpJ2pUm1xyZyklT2HgP5LHoumI0o/pcXdTweJMjKHu92JKa33pZRCrRI0DdPcE5MGHk6GCpDMQ==",
-      "type": "package",
-      "path": "commonservicelocator/2.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "commonservicelocator.2.0.2.nupkg.sha512",
-        "commonservicelocator.nuspec",
-        "lib/net40/CommonServiceLocator.dll",
-        "lib/net45/CommonServiceLocator.dll",
-        "lib/net47/CommonServiceLocator.dll",
-        "lib/netcoreapp1.0/CommonServiceLocator.dll",
-        "lib/netstandard1.0/CommonServiceLocator.dll",
-        "lib/netstandard2.0/CommonServiceLocator.dll"
-      ]
-    },
     "FirebaseAuthentication.net/3.7.2": {
       "sha512": "d0Zc0tiE7NutI/jMX/T81LU/rX3HVBH8vtvKTbIeN6BCIQ+wipstz7tm5MnIgAeh4ehqCHTiVuMOHztqfCVCBQ==",
       "type": "package",
@@ -1735,123 +1721,6 @@
         "litedb.nuspec"
       ]
     },
-    "MvvmLightLibs/5.4.1.1": {
-      "sha512": "xYpVzOYnIz/M6T0pdc3w5t0vrt2ZKspSS+CZjQ+pZE+5yHv9qXSWkncHJXb6D7Egstalso4ivnIUkA1xEClViw==",
-      "type": "package",
-      "path": "mvvmlightlibs/5.4.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
-        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
-        "lib/SL5/GalaSoft.MvvmLight.dll",
-        "lib/SL5/GalaSoft.MvvmLight.pdb",
-        "lib/SL5/GalaSoft.MvvmLight.xml",
-        "lib/SL5/System.Windows.Interactivity.dll",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
-        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
-        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
-        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
-        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
-        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
-        "lib/net35/GalaSoft.MvvmLight.dll",
-        "lib/net35/GalaSoft.MvvmLight.pdb",
-        "lib/net35/GalaSoft.MvvmLight.xml",
-        "lib/net35/System.Windows.Interactivity.dll",
-        "lib/net35/System.Windows.Interactivity.xml",
-        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
-        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
-        "lib/net40/GalaSoft.MvvmLight.dll",
-        "lib/net40/GalaSoft.MvvmLight.pdb",
-        "lib/net40/GalaSoft.MvvmLight.xml",
-        "lib/net40/System.Windows.Interactivity.dll",
-        "lib/net40/System.Windows.Interactivity.xml",
-        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
-        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
-        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
-        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
-        "lib/net45/GalaSoft.MvvmLight.dll",
-        "lib/net45/GalaSoft.MvvmLight.pdb",
-        "lib/net45/GalaSoft.MvvmLight.xml",
-        "lib/net45/System.Windows.Interactivity.dll",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.dll",
-        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.pdb",
-        "lib/uap10.0/GalaSoft.MvvmLight.Extras.dll",
-        "lib/uap10.0/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/uap10.0/GalaSoft.MvvmLight.Extras.xml",
-        "lib/uap10.0/GalaSoft.MvvmLight.Platform.dll",
-        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pri",
-        "lib/uap10.0/GalaSoft.MvvmLight.Platform.xml",
-        "lib/uap10.0/GalaSoft.MvvmLight.dll",
-        "lib/uap10.0/GalaSoft.MvvmLight.pdb",
-        "lib/uap10.0/GalaSoft.MvvmLight.xml",
-        "lib/windows81/GalaSoft.MvvmLight.Extras.dll",
-        "lib/windows81/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/windows81/GalaSoft.MvvmLight.Extras.xml",
-        "lib/windows81/GalaSoft.MvvmLight.Platform.dll",
-        "lib/windows81/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/windows81/GalaSoft.MvvmLight.Platform.pri",
-        "lib/windows81/GalaSoft.MvvmLight.Platform.xml",
-        "lib/windows81/GalaSoft.MvvmLight.dll",
-        "lib/windows81/GalaSoft.MvvmLight.pdb",
-        "lib/windows81/GalaSoft.MvvmLight.xml",
-        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
-        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
-        "lib/wp8/GalaSoft.MvvmLight.Platform.dll",
-        "lib/wp8/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/wp8/GalaSoft.MvvmLight.Platform.xml",
-        "lib/wp8/GalaSoft.MvvmLight.dll",
-        "lib/wp8/GalaSoft.MvvmLight.pdb",
-        "lib/wp8/GalaSoft.MvvmLight.xml",
-        "lib/wp8/System.Windows.Interactivity.dll",
-        "lib/wp81/GalaSoft.MvvmLight.Extras.dll",
-        "lib/wp81/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/wp81/GalaSoft.MvvmLight.Extras.xml",
-        "lib/wp81/GalaSoft.MvvmLight.Platform.dll",
-        "lib/wp81/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/wp81/GalaSoft.MvvmLight.Platform.xml",
-        "lib/wp81/GalaSoft.MvvmLight.dll",
-        "lib/wp81/GalaSoft.MvvmLight.pdb",
-        "lib/wp81/GalaSoft.MvvmLight.xml",
-        "lib/wp81/System.Windows.Interactivity.dll",
-        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
-        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
-        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
-        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
-        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
-        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
-        "lib/wpa81/GalaSoft.MvvmLight.XML",
-        "lib/wpa81/GalaSoft.MvvmLight.dll",
-        "lib/wpa81/GalaSoft.MvvmLight.pdb",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
-        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
-        "mvvmlightlibs.5.4.1.1.nupkg.sha512",
-        "mvvmlightlibs.nuspec"
-      ]
-    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -1877,6 +1746,20 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.CurrentActivity/2.1.0.4": {
+      "sha512": "m8xaXvXUzBSqP6xRe5PeIG347WxsG/VWrZta7MnPpSvNuPf0RLB/S49UCCQyBKSsfu053+apvYm14BC7GU6Zzg==",
+      "type": "package",
+      "path": "plugin.currentactivity/2.1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/Plugin.CurrentActivity.dll",
+        "lib/monoandroid44/Plugin.CurrentActivity.xml",
+        "plugin.currentactivity.2.1.0.4.nupkg.sha512",
+        "plugin.currentactivity.nuspec",
+        "readme.txt"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -2141,6 +2024,46 @@
         "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
         "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
         "system.runtime.interopservices.windowsruntime.nuspec"
+      ]
+    },
+    "Xam.Plugin.Media/5.0.1": {
+      "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "type": "package",
+      "path": "xam.plugin.media/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Media.dll",
+        "lib/monoandroid10.0/Plugin.Media.pdb",
+        "lib/monoandroid10.0/Plugin.Media.xml",
+        "lib/monoandroid80/Plugin.Media.dll",
+        "lib/monoandroid80/Plugin.Media.pdb",
+        "lib/monoandroid80/Plugin.Media.xml",
+        "lib/monoandroid81/Plugin.Media.dll",
+        "lib/monoandroid81/Plugin.Media.pdb",
+        "lib/monoandroid81/Plugin.Media.xml",
+        "lib/monoandroid90/Plugin.Media.dll",
+        "lib/monoandroid90/Plugin.Media.pdb",
+        "lib/monoandroid90/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.pdb",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.16299/Plugin.Media.dll",
+        "lib/uap10.0.16299/Plugin.Media.pdb",
+        "lib/uap10.0.16299/Plugin.Media.pri",
+        "lib/uap10.0.16299/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.pdb",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.5.0.1.nupkg.sha512",
+        "xam.plugin.media.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -3707,7 +3630,9 @@
     "MonoAndroid,Version=v12.0": [
       "FirebaseDatabase.net >= 4.0.7",
       "Newtonsoft.Json >= 13.0.1",
+      "Plugin.CurrentActivity >= 2.1.0.4",
       "ProyectoAntirrabico >= 1.0.0",
+      "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.1",
       "Xamarin.Forms >= 5.0.0.2401"
     ]
@@ -3761,6 +3686,14 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "Plugin.CurrentActivity": {
+            "target": "Package",
+            "version": "[2.1.0.4, )"
+          },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

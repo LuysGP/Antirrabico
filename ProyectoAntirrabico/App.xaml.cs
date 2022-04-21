@@ -11,7 +11,7 @@ namespace ProyectoAntirrabico
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new Login());
+            MainPage = new NavigationPage (new FormRegistroAdmin());
         }
 
         protected override void OnStart()

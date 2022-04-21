@@ -1,5 +1,5 @@
 ﻿using Firebase.Auth;
-using GalaSoft.MvvmLight.Command;
+using Plugin.Media.Abstractions;
 using ProyectoAntirrabico.Views;
 using System;
 using System.Collections.Generic;
@@ -103,16 +103,29 @@ namespace ProyectoAntirrabico.ViewModel
 
             await Navigation.PopAsync();
         }
-        #endregion
-        #region COMANDOS
-        public ICommand Registrarcommand
+
+        public async void TomarFoto()
         {
-            get 
+            var camara = new StoreCameraMediaOptions();
+            camara.PhotoSize = PhotoSize.Full;
+            camara.SaveToAlbum = true;
+
+            var foto = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(camara);
+
+            if(foto!=null)
             {
-                return new RelayCommand(Registrar);
+                Foto = ImageSource.FromStream(() =>
+                {
+                    return foto.GetStream();
+                });
             }
         }
+        #endregion
+        #region COMANDOS
+        public ICommand Registrarcommand => new Command(Registrar);
         public ICommand Cancelarcommand => new Command(Cancelar);
+
+        public ICommand TomarFotocommand => new Command(TomarFoto);
         //public ICommand ProcesoSimpcommand => new Command(async () => await ProcesoSimple());
         #endregion
     }
