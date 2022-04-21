@@ -13,6 +13,7 @@ namespace ProyectoAntirrabico.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FormRegistroAdmin : ContentPage
     {
+
         public FormRegistroAdmin()
         {
             InitializeComponent();
