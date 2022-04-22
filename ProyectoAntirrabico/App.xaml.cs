@@ -1,5 +1,4 @@
-﻿using ProyectoAntirrabico.Views;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +10,7 @@ namespace ProyectoAntirrabico
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new FormRegistroAdmin());
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
