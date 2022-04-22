@@ -123,17 +123,8 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="FirebaseDatabase.net">
-      <Version>4.0.7</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xam.Plugin.Media">
-      <Version>5.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -141,38 +132,5 @@
       <Project>{97B8D1EB-EA5D-43E5-B77A-A760D7DF0798}</Project>
       <Name>ProyectoAntirrabico</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\AdoptarDog.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\camera.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\cancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\home-free-icon-font.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\lock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Zoolo+cotas.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\logoAjustado.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\upload.png" />
   </ItemGroup>
 </Project>

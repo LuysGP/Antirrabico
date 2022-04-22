@@ -11,41 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Datos\**" />
-    <Compile Remove="Modelos\**" />
-    <Compile Remove="MV\**" />
-    <EmbeddedResource Remove="Datos\**" />
-    <EmbeddedResource Remove="Modelos\**" />
-    <EmbeddedResource Remove="MV\**" />
-    <None Remove="Datos\**" />
-    <None Remove="Modelos\**" />
-    <None Remove="MV\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
-    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Conexion\" />
+    <Folder Include="Datos\" />
+    <Folder Include="MV\" />
+    <Folder Include="Modelos\" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\FormMascotasAdopcion.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\FormMascotasPerdidas.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\FormRegistroAdmin.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Login.xaml">
+    <EmbeddedResource Update="Views\InsercionMascotas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
