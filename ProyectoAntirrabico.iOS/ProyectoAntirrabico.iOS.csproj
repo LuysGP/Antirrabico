@@ -172,4 +172,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\logoAjustado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\upload.png" />
+  </ItemGroup>
 </Project>

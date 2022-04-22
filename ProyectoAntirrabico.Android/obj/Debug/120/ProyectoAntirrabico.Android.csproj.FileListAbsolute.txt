@@ -1287,3 +1287,4 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Andr
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\Plugin.Media.pdb
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc64435a5ac349fa9fda\ActivityLifecycleContextListener.java
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc646957603ea1820544\MediaPickerActivity.java
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\upload.png

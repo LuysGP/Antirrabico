@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ProyectoAntirrabico.ViewModel
@@ -18,6 +19,7 @@ namespace ProyectoAntirrabico.ViewModel
         string _Area;
         string _Correo;
         string _Contraseña;
+        string _LinkFoto;
 
         #endregion
         #region CONSTRUCTOR
@@ -39,10 +41,24 @@ namespace ProyectoAntirrabico.ViewModel
             set { SetValue(ref _Apellidos, value); }
         }
 
+        public string LinkFoto
+        {
+            get { return _LinkFoto; }
+            set { SetValue(ref _LinkFoto, value); }
+        }
+
         public string Area
         {
             get { return _Area; }
             set { SetValue(ref _Area, value); }
+        }
+
+        public string SeleccionArea
+        {
+            get { return _Area; }
+            set { SetProperty(ref _Area, value);
+                Area = _Area;
+            }
         }
 
         public string Correo
@@ -97,9 +113,11 @@ namespace ProyectoAntirrabico.ViewModel
         {
             Nombres = null;
             Apellidos = null;
-            Area = null;
+            LinkFoto = null;
+            SeleccionArea = null;
             Correo = null;
             Contraseña = null;
+            Foto = null;
 
             await Navigation.PopAsync();
         }
@@ -120,13 +138,20 @@ namespace ProyectoAntirrabico.ViewModel
                 });
             }
         }
+
+        public async Task AbrirNavegador()
+        {
+            await Browser.OpenAsync("https://imgbb.com/", BrowserLaunchMode.SystemPreferred);
+        }
         #endregion
         #region COMANDOS
         public ICommand Registrarcommand => new Command(Registrar);
         public ICommand Cancelarcommand => new Command(Cancelar);
 
+        //Comando que ejecuta el proceso TomarFoto
         public ICommand TomarFotocommand => new Command(TomarFoto);
-        //public ICommand ProcesoSimpcommand => new Command(async () => await ProcesoSimple());
+
+        public ICommand AbrirNavcommand => new Command(async () => await AbrirNavegador());
         #endregion
     }
 }

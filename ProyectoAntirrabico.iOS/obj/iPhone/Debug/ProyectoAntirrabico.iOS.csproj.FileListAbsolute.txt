@@ -65,10 +65,6 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\obj\iPhone\Debug\ProyectoAntirrabico.iOS.csproj.CopyComplete
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\obj\iPhone\Debug\ProyectoAntirrabico.iOS.exe
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\obj\iPhone\Debug\ProyectoAntirrabico.iOS.pdb
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\CommonServiceLocator.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\Firebase.Auth.dll
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.Extras.dll
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.Extras.pdb
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.Platform.dll
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.dll
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.iOS\bin\iPhone\Debug\Plugin.Media.pdb
