@@ -30,11 +30,13 @@
                    Margin="0,10,0,20">
 
                 <StackLayout>
+                    
                     <Image Source="{Binding Foto}"
                            HeightRequest="100"
                            Margin="0,10,0,0"/>
 
-                    <StackLayout Orientation="Horizontal"
+
+                        <StackLayout Orientation="Horizontal"
                                  HorizontalOptions="CenterAndExpand">
                         
                         <Button Text="Tomar foto"
@@ -76,7 +78,7 @@
                                FontSize="18"
                                FontAttributes="Bold"/>
                         <Entry Grid.Row="0" Grid.Column="1"
-                               Text="{Binding Nombres}"/>
+                               Text="{Binding txtNombres}"/>
 
                         <Label Grid.Row="1" Grid.Column="0"
                                Text="Apellido(s):"
@@ -85,7 +87,7 @@
                                FontSize="18"
                                FontAttributes="Bold"/>
                         <Entry Grid.Row="1" Grid.Column="1"
-                               Text="{Binding Apellidos}"/>
+                               Text="{Binding txtApellidos}"/>
                         
                         <Label Grid.Row="2" Grid.Column="0"
                                Text="Link foto:"
@@ -95,7 +97,7 @@
                                FontAttributes="Bold"/>
                         <Entry Grid.Row="2" Grid.Column="1"
                                FontSize="14"
-                               Text="{Binding LinkFoto}"/>
+                               Text="{Binding txtLinkFoto}"/>
 
                         <Label Grid.Row="3" Grid.Column="0"
                                Text="Área:"
@@ -122,7 +124,7 @@
                                FontSize="18"
                                FontAttributes="Bold"/>
                         <Entry Grid.Row="4" Grid.Column="1"
-                               Text="{Binding Correo}"/>
+                               Text="{Binding txtCorreo}"/>
 
                         <Label Grid.Row="5" Grid.Column="0"
                                Text="Contraseña:"
@@ -132,7 +134,7 @@
                                FontAttributes="Bold"/>
                         <Entry Grid.Row="5" Grid.Column="1"
                                IsPassword="True"
-                               Text="{Binding Contraseña}"/>
+                               Text="{Binding txtContraseña}"/>
 
                         <StackLayout Grid.Row="6" Grid.ColumnSpan="2"
                                      Orientation="Vertical"

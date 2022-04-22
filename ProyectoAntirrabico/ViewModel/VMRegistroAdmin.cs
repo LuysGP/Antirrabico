@@ -1,13 +1,16 @@
-﻿using Firebase.Auth;
-using Plugin.Media.Abstractions;
-using ProyectoAntirrabico.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+//LIBRERIAS NECESARIAS
+using Firebase.Auth;
+using Plugin.Media.Abstractions;
+using ProyectoAntirrabico.Views;
+using ProyectoAntirrabico.Model;
+using ProyectoAntirrabico.Data;
 
 namespace ProyectoAntirrabico.ViewModel
 {
@@ -29,25 +32,25 @@ namespace ProyectoAntirrabico.ViewModel
         }
         #endregion
         #region OBJETOS
-        public string Nombres
+        public string txtNombres
         {
             get { return _Nombres; }
             set { SetValue(ref _Nombres, value); }
         }
 
-        public string Apellidos
+        public string txtApellidos
         {
             get { return _Apellidos; }
             set { SetValue(ref _Apellidos, value); }
         }
 
-        public string LinkFoto
+        public string txtLinkFoto
         {
             get { return _LinkFoto; }
             set { SetValue(ref _LinkFoto, value); }
         }
 
-        public string Area
+        public string txtArea
         {
             get { return _Area; }
             set { SetValue(ref _Area, value); }
@@ -57,17 +60,17 @@ namespace ProyectoAntirrabico.ViewModel
         {
             get { return _Area; }
             set { SetProperty(ref _Area, value);
-                Area = _Area;
+                txtArea = _Area;
             }
         }
 
-        public string Correo
+        public string txtCorreo
         {
             get { return _Correo; }
             set { SetValue(ref _Correo, value); }
         }
 
-        public string Contraseña
+        public string txtContraseña
         {
             get { return _Contraseña; }
             set { SetValue(ref _Contraseña, value); }
@@ -75,10 +78,52 @@ namespace ProyectoAntirrabico.ViewModel
 
         #endregion
         #region PROCESOS
-        public async void Registrar()
+
+        public async void CrearAutenticacion()
+        {
+            string ClaveWebAPI = "AIzaSyCM5hy5-xg6TQGsqmsBqkyknZl-fef_D6E";
+
+            try
+            {
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(ClaveWebAPI));
+                var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(txtCorreo.ToString(), txtContraseña.ToString());
+                string gettoken = auth.FirebaseToken;
+
+                await Navigation.PopAsync();
+            }
+            catch (Exception E)
+            {
+                await DisplayAlert("Alerta", E.Message, "Ok");
+            }
+        }
+
+        public async Task InsertarAdmin()
+        {
+            var funcion = new DAdministradores();
+            var parametros = new MAdmistradores();
+
+            //Se asignan los valores de los objetos
+            parametros.Apellidos = txtApellidos;
+            parametros.Nombres = txtNombres;
+            parametros.Area = SeleccionArea;
+            parametros.LinkFoto = txtLinkFoto;
+            parametros.Contraseña = txtContraseña;
+            parametros.Correo = txtCorreo;
+
+            await funcion.InsertarAdmin(parametros);
+        }
+
+        public async Task Registrar()
         {
             //Validaciones para el usuario y contraseña
-
+            if (string.IsNullOrEmpty(this._Nombres) || (string.IsNullOrEmpty(this._Apellidos) || (string.IsNullOrEmpty(this._LinkFoto) 
+                || (string.IsNullOrEmpty(this.SeleccionArea)))))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error", "Ingrese los campos en vacíos", "Aceptar"
+                );
+                return;
+            }
             if (string.IsNullOrEmpty(this._Correo))
             {
                 await Application.Current.MainPage.DisplayAlert(
@@ -94,29 +139,21 @@ namespace ProyectoAntirrabico.ViewModel
                 return;
             }
 
-            string ClaveWebAPI = "AIzaSyCM5hy5-xg6TQGsqmsBqkyknZl-fef_D6E";
+            await InsertarAdmin();
+            CrearAutenticacion();
 
-            try
-            {
-                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(ClaveWebAPI));
-                var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(Correo.ToString(), Contraseña.ToString());
-                string gettoken = auth.FirebaseToken;
+            await DisplayAlert("Listo","Se ha insertado el nuevo admin","Ok");
 
-                await Navigation.PopAsync();
-            }
-            catch (Exception E)
-            {
-                await DisplayAlert("Alerta", E.Message, "Ok");
-            }
+            await Navigation.PopAsync();
         }
         public async void Cancelar()
         {
-            Nombres = null;
-            Apellidos = null;
-            LinkFoto = null;
+            txtApellidos = null;
+            txtNombres = null;
+            txtLinkFoto = null;
             SeleccionArea = null;
-            Correo = null;
-            Contraseña = null;
+            txtCorreo = null;
+            txtContraseña = null;
             Foto = null;
 
             await Navigation.PopAsync();
@@ -145,13 +182,14 @@ namespace ProyectoAntirrabico.ViewModel
         }
         #endregion
         #region COMANDOS
-        public ICommand Registrarcommand => new Command(Registrar);
+        public ICommand Registrarcommand => new Command(async () => await Registrar());
         public ICommand Cancelarcommand => new Command(Cancelar);
 
         //Comando que ejecuta el proceso TomarFoto
         public ICommand TomarFotocommand => new Command(TomarFoto);
 
         public ICommand AbrirNavcommand => new Command(async () => await AbrirNavegador());
+        
         #endregion
     }
 }
