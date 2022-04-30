@@ -9,13 +9,14 @@
 
         <StackLayout Grid.Row="0"
                      Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand"
                      BackgroundColor="White"
                      Margin="0,0,0,0">
 
             <Image Source="logoAjustado.png"
                    HeightRequest="140"/>
 
-            <Label Text="Mascotas en adopción"
+            <Label Text="Mascotas extraviadas"
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="20"/>
@@ -35,7 +36,6 @@
                 </StackLayout>
 
             </Frame>
-
 
         </StackLayout>
 

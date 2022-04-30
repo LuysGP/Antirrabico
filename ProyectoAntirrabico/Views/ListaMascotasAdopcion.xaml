@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAntirrabico.Views.ListaMascotasAdopcion"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#F5F5F5">
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start"
+                     BackgroundColor="White">
+
+            <Image Source="logoAjustado.png"
+                   HeightRequest="80"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+
+            <Frame HasShadow="False"
+                   BorderColor="#3C4562"
+                   CornerRadius="50"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   HeightRequest="40"
+                   WidthRequest="40"
+                   BackgroundColor="#C4C4C4"
+                   Padding="0"
+                   Margin="15">
+
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="user.png"
+                           WidthRequest="25"/>
+                </StackLayout>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+        </StackLayout>
+
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
+              Margin="10,0,10,0">
+            <ScrollView>
+                <Grid ColumnDefinitions="*,*">
+                    <StackLayout x:Name="Izquierda" Grid.Column="0">
+
+                    </StackLayout>
+                    <StackLayout x:Name="Derecha" Grid.Column="1">
+
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+
+            <Image Source="add.png"
+                   VerticalOptions="End"
+                   HorizontalOptions="End"
+                   HeightRequest="55"
+                   Margin="15,10">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrFormMAcommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+
+        <StackLayout BackgroundColor="#3C4562"
+                     Orientation="Horizontal">
+            <StackLayout Margin="90,5,0,5"
+                         HorizontalOptions="CenterAndExpand">
+                <Image Source="searchWhite.png"
+                       HeightRequest="40"/>
+                <Label Text="Busqueda"
+                       Margin="0,-8,0,0"
+                       TextColor="White"
+                       FontSize="Micro"
+                       HorizontalOptions="Center"/>
+                
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrListaMPcommand}"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Margin="0,5,90,5"
+                         HorizontalOptions="CenterAndExpand">
+                <Image Source="adopcionSelect.png"
+                       HeightRequest="40"/>
+                <Label Text="Adopción"
+                       Margin="0,-8,0,0"
+                       TextColor="#F18043"
+                       FontSize="Micro"
+                       HorizontalOptions="Center"/>
+                
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
