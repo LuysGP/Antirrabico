@@ -685,14 +685,14 @@ public final class R {
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f070052;
 		public static final int abc_textfield_search_material = 0x7f070053;
 		public static final int abc_vector_test = 0x7f070054;
-		public static final int btn_checkbox_checked_mtrl = 0x7f070059;
-		public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f07005a;
-		public static final int btn_checkbox_unchecked_mtrl = 0x7f07005b;
-		public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f07005c;
-		public static final int btn_radio_off_mtrl = 0x7f07005d;
-		public static final int btn_radio_off_to_on_mtrl_animation = 0x7f07005e;
-		public static final int btn_radio_on_mtrl = 0x7f07005f;
-		public static final int btn_radio_on_to_off_mtrl_animation = 0x7f070060;
+		public static final int btn_checkbox_checked_mtrl = 0x7f07005a;
+		public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f07005b;
+		public static final int btn_checkbox_unchecked_mtrl = 0x7f07005c;
+		public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f07005d;
+		public static final int btn_radio_off_mtrl = 0x7f07005e;
+		public static final int btn_radio_off_to_on_mtrl_animation = 0x7f07005f;
+		public static final int btn_radio_on_mtrl = 0x7f070060;
+		public static final int btn_radio_on_to_off_mtrl_animation = 0x7f070061;
 		public static final int ic_arrow_down_24dp = 0x7f070069;
 		public static final int notification_action_background = 0x7f070089;
 		public static final int notification_bg = 0x7f07008a;
@@ -707,8 +707,8 @@ public final class R {
 		public static final int notification_tile_bg = 0x7f070093;
 		public static final int notify_panel_notification_icon_bg = 0x7f070094;
 		public static final int preference_list_divider_material = 0x7f070095;
-		public static final int tooltip_frame_dark = 0x7f070099;
-		public static final int tooltip_frame_light = 0x7f07009a;
+		public static final int tooltip_frame_dark = 0x7f07009b;
+		public static final int tooltip_frame_light = 0x7f07009c;
 	}
 	public static final class id {
 		public static final int accessibility_action_clickable_span = 0x7f08000f;

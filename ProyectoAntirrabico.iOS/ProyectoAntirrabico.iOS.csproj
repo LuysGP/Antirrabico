@@ -143,19 +143,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\AdoptarDog.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\camera.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\cancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\home-free-icon-font.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\lock.png" />
@@ -174,5 +165,20 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\adopcionWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\searchSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\searchWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\adopcionSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\add.png" />
   </ItemGroup>
 </Project>

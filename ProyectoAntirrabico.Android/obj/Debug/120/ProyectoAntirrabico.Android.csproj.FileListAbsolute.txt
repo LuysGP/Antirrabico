@@ -1228,10 +1228,8 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Andr
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Reactive.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\add.png
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\adoptardog.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\camera.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\cancel.png
-C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\home.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\lock.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\save.png
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\user.png
@@ -1288,3 +1286,7 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Andr
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc64435a5ac349fa9fda\ActivityLifecycleContextListener.java
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\android\src\crc646957603ea1820544\MediaPickerActivity.java
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\upload.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\adopcionwhite.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\searchselect.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\searchwhite.png
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico.Android\obj\Debug\120\res\drawable\adopcionselect.png

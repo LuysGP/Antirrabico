@@ -16712,61 +16712,61 @@ namespace ProyectoAntirrabico.Droid
 			public const int add = 2131165269;
 			
 			// aapt resource value: 0x7F070056
-			public const int AdoptarDog = 2131165270;
+			public const int adopcionSelect = 2131165270;
 			
 			// aapt resource value: 0x7F070057
-			public const int avd_hide_password = 2131165271;
+			public const int adopcionWhite = 2131165271;
 			
 			// aapt resource value: 0x7F070058
-			public const int avd_show_password = 2131165272;
+			public const int avd_hide_password = 2131165272;
 			
 			// aapt resource value: 0x7F070059
-			public const int btn_checkbox_checked_mtrl = 2131165273;
+			public const int avd_show_password = 2131165273;
 			
 			// aapt resource value: 0x7F07005A
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165274;
+			public const int btn_checkbox_checked_mtrl = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
-			public const int btn_checkbox_unchecked_mtrl = 2131165275;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165276;
+			public const int btn_checkbox_unchecked_mtrl = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int btn_radio_off_mtrl = 2131165277;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int btn_radio_off_to_on_mtrl_animation = 2131165278;
+			public const int btn_radio_off_mtrl = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int btn_radio_on_mtrl = 2131165279;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int btn_radio_on_to_off_mtrl_animation = 2131165280;
+			public const int btn_radio_on_mtrl = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int camera = 2131165281;
+			public const int btn_radio_on_to_off_mtrl_animation = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int cancel = 2131165282;
+			public const int camera = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int design_fab_background = 2131165283;
+			public const int cancel = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int design_ic_visibility = 2131165284;
+			public const int design_fab_background = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int design_ic_visibility_off = 2131165285;
+			public const int design_ic_visibility = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int design_password_eye = 2131165286;
+			public const int design_ic_visibility_off = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int design_snackbar_background = 2131165287;
+			public const int design_password_eye = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int home = 2131165288;
+			public const int design_snackbar_background = 2131165288;
 			
 			// aapt resource value: 0x7F070070
 			public const int iconosplash = 2131165296;
@@ -16907,22 +16907,28 @@ namespace ProyectoAntirrabico.Droid
 			public const int save = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int splash = 2131165335;
+			public const int searchSelect = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int test_custom_background = 2131165336;
+			public const int searchWhite = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int tooltip_frame_dark = 2131165337;
+			public const int splash = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int tooltip_frame_light = 2131165338;
+			public const int test_custom_background = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int upload = 2131165339;
+			public const int tooltip_frame_dark = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int user = 2131165340;
+			public const int tooltip_frame_light = 2131165340;
+			
+			// aapt resource value: 0x7F07009D
+			public const int upload = 2131165341;
+			
+			// aapt resource value: 0x7F07009E
+			public const int user = 2131165342;
 			
 			static Drawable()
 			{
