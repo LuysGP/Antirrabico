@@ -11,7 +11,7 @@ namespace ProyectoAntirrabico
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new FormMascotasPerdidas());
+            MainPage = new NavigationPage (new FormMascotasAdopcion());
         }
 
         protected override void OnStart()
