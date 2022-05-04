@@ -43,6 +43,8 @@ namespace ProyectoAntirrabico.ViewModel
         #region PROCESOS
         public async Task IrRegistrorAdmin()
         {
+            txtCorreo = null;
+            txtContraseña = null;
             await Navigation.PushAsync(new FormRegistroAdmin());
         }
 

@@ -4,7 +4,7 @@
              x:Class="ProyectoAntirrabico.Views.FormRegistroAdmin"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#F6F6F6">
         <Grid RowDefinitions="70,*"
           BackgroundColor="#F6F6F6">
 
@@ -79,37 +79,63 @@
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    TextColor="Gray"/>
-                            <Entry Grid.Row="0" Grid.Column="1"
-                               Text="{Binding txtNombres}"
-                                   TextColor="Black"
-                                   BackgroundColor="#F6F6F6"/>
+                            <Frame Grid.Row="0" Grid.Column="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,4">
+                                <Entry Text="{Binding txtNombres}"
+                                       TextColor="Black"/>
+                            </Frame>
+                            
 
                             <Label Grid.Row="1" Grid.Column="0"
-                               Text="Apellido(s):"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"
-                               FontSize="18"
-                               FontAttributes="Bold"/>
-                            <Entry Grid.Row="1" Grid.Column="1"
-                               Text="{Binding txtApellidos}"/>
+                                   Text="Apellido(s):"
+                                   VerticalOptions="Center"
+                                   TextColor="Gray"
+                                   HorizontalOptions="End"
+                                   FontSize="18"
+                                   FontAttributes="Bold"/>
+                            <Frame Grid.Row="1" Grid.Column="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,4">
+                                <Entry Text="{Binding txtApellidos}"
+                                       TextColor="Black"/>
+                            </Frame>
+                            
 
                             <Label Grid.Row="2" Grid.Column="0"
                                Text="Link foto:"
                                VerticalOptions="Center"
                                HorizontalOptions="End"
                                FontSize="18"
-                               FontAttributes="Bold"/>
-                            <Entry Grid.Row="2" Grid.Column="1"
-                               FontSize="14"
-                               Text="{Binding txtLinkFoto}"/>
+                               FontAttributes="Bold"
+                                   TextColor="Gray"/>
+                            <Frame Grid.Row="2" Grid.Column="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,4">
+                                <Entry FontSize="14"
+                                       Text="{Binding txtLinkFoto}"
+                                       TextColor="Black"
+                                       Placeholder="Pegar link"
+                                       PlaceholderColor="Gray"/>
+                            </Frame>
+                            
 
                             <Label Grid.Row="3" Grid.Column="0"
                                Text="Área:"
                                VerticalOptions="Center"
                                HorizontalOptions="End"
                                FontSize="18"
-                               FontAttributes="Bold"/>
+                               FontAttributes="Bold"
+                                   TextColor="Gray"/>
                             <Picker Grid.Column="1" Grid.Row="3"
+                                    TitleColor="Gray"
+                                    TextColor="Black"
                                 Title="Seleccionar"
                                 FontSize="18"
                                 SelectedItem="{Binding SeleccionArea}">
@@ -122,23 +148,40 @@
                             </Picker>
 
                             <Label Grid.Row="4" Grid.Column="0"
+                                   TextColor="Gray"
                                Text="Correo:"
                                VerticalOptions="Center"
                                HorizontalOptions="End"
                                FontSize="18"
                                FontAttributes="Bold"/>
-                            <Entry Grid.Row="4" Grid.Column="1"
-                               Text="{Binding txtCorreo}"/>
+                            <Frame Grid.Row="4" Grid.Column="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,4">
+                                
+                                <Entry Text="{Binding txtCorreo}"
+                                       TextColor="Black"/>
+                            </Frame>
+                            
 
                             <Label Grid.Row="5" Grid.Column="0"
-                               Text="Contraseña:"
-                               FontSize="18"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"
-                               FontAttributes="Bold"/>
-                            <Entry Grid.Row="5" Grid.Column="1"
-                               IsPassword="True"
-                               Text="{Binding txtContraseña}"/>
+                                   TextColor="Gray"
+                                   Text="Contraseña:"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="End"
+                                   FontAttributes="Bold"/>
+                            <Frame Grid.Row="5" Grid.Column="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,4">
+                                <Entry IsPassword="True"
+                                       Text="{Binding txtContraseña}"
+                                       TextColor="Black"/>
+                            </Frame>
+                            
 
                             <StackLayout Grid.Row="6" Grid.ColumnSpan="2"
                                      Orientation="Vertical"

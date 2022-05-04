@@ -28,9 +28,9 @@ namespace ProyectoAntirrabico.ViewModel
         }
         #endregion
         #region PROCESOS
-        public async Task IrListaMascotasPerdidas()
+        public async Task IrLogin()
         {
-            await Navigation.PushAsync(new ListaMascotasPerdidas());
+            await Navigation.PushAsync(new Login());
         }
 
         public async Task IrFormMascotasAdopcion()
@@ -44,7 +44,7 @@ namespace ProyectoAntirrabico.ViewModel
         }
         #endregion
         #region COMANDOS
-        public ICommand IrListaMPcommand => new Command(async () => await IrListaMascotasPerdidas());
+        public ICommand IrLogincommand => new Command(async () => await IrLogin());
         public ICommand IrFormMAcommand => new Command(async () => await IrFormMascotasAdopcion());
         public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
         #endregion

@@ -14,27 +14,42 @@
                 <Image Source="user.png"
                        HeightRequest="40"
                        />
-                <Entry Placeholder="Correo"
+                <Frame Padding="0"
+                       BackgroundColor="#F6F6F6"
+                       CornerRadius="5"
+                       HasShadow="False"
+                       Margin="5,0,-5,0">
+                    <Entry Placeholder="Correo"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="#F6F6F6"
                        Text="{Binding txtCorreo}"
                        WidthRequest="280"
                        FontSize="20"
                        TextColor="#3C4562"
                        HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand">
-                    <Entry.Triggers>
-                        <Trigger TargetType="Entry"
+                        <Entry.Triggers>
+                            <Trigger TargetType="Entry"
                                  Property="IsFocused" Value="true">
-                            <Setter Property="Placeholder" Value=""/>
-                        </Trigger>
-                    </Entry.Triggers>
-                </Entry>
+                                <Setter Property="Placeholder" Value=""/>
+                            </Trigger>
+                        </Entry.Triggers>
+                    </Entry>
+
+                </Frame>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
                          Margin="0,20,0,0">
                 <Image Source="lock.png"
                        HeightRequest="40"/>
-                <Entry Placeholder="Contraseña"
+                <Frame Padding="0"
+                       BackgroundColor="#F6F6F6"
+                       CornerRadius="5"
+                       HasShadow="False"
+                       Margin="5,0,-5,0">
+                    <Entry Placeholder="Contraseña"
+                           PlaceholderColor="Gray"
                        Text="{Binding txtContraseña}"
                        WidthRequest="280"
                        FontSize="20"
@@ -42,15 +57,14 @@
                        IsPassword="True"
                        HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand">
-
-                    <Entry.Triggers>
-                        <Trigger TargetType="Entry"
+                        <Entry.Triggers>
+                            <Trigger TargetType="Entry"
                                  Property="IsFocused" Value="true">
-                            <Setter Property="Placeholder" Value=""/>
-                        </Trigger>
-                    </Entry.Triggers>
-                    
-                </Entry>
+                                <Setter Property="Placeholder" Value=""/>
+                            </Trigger>
+                        </Entry.Triggers>
+                    </Entry>
+                </Frame>
             </StackLayout>
 
             <StackLayout Margin="0,100,0,0">

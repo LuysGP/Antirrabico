@@ -120,7 +120,7 @@ namespace ProyectoAntirrabico.ViewModel
                 || (string.IsNullOrEmpty(this.SeleccionArea)))))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error", "Ingrese los campos en vacíos", "Aceptar"
+                    "Error", "Debe de llenar todos los campos vacíos", "Aceptar"
                 );
                 return;
             }

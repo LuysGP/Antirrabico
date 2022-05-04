@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAntirrabico.Views.ListaMascotasAdopcion"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             Title="Adopción">
 
     <StackLayout BackgroundColor="#F5F5F5">
 
@@ -28,7 +29,12 @@
 
                 <StackLayout VerticalOptions="Center">
                     <Image Source="user.png"
-                           WidthRequest="25"/>
+                           WidthRequest="25">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding IrLogincommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
                 </StackLayout>
 
                 <Frame.GestureRecognizers>
@@ -63,35 +69,6 @@
             </Image>
         </Grid>
 
-        <StackLayout BackgroundColor="#3C4562"
-                     Orientation="Horizontal">
-            <StackLayout Margin="90,5,0,5"
-                         HorizontalOptions="CenterAndExpand">
-                <Image Source="searchWhite.png"
-                       HeightRequest="40"/>
-                <Label Text="Busqueda"
-                       Margin="0,-8,0,0"
-                       TextColor="White"
-                       FontSize="Micro"
-                       HorizontalOptions="Center"/>
-                
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding IrListaMPcommand}"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-
-            <StackLayout Margin="0,5,90,5"
-                         HorizontalOptions="CenterAndExpand">
-                <Image Source="adopcionSelect.png"
-                       HeightRequest="40"/>
-                <Label Text="Adopción"
-                       Margin="0,-8,0,0"
-                       TextColor="#F18043"
-                       FontSize="Micro"
-                       HorizontalOptions="Center"/>
-                
-            </StackLayout>
-        </StackLayout>
     </StackLayout>
 
 </ContentPage>

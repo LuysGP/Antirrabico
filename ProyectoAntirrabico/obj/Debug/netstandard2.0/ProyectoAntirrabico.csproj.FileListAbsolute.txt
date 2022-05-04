@@ -34,3 +34,4 @@ C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\FormMascotasAdopcion.xaml.g.cs
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\ListaMascotasPerdidas.xaml.g.cs
 C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\ListaMascotasAdopcion.xaml.g.cs
+C:\Users\Fernando Cano\Documents\Semestre 6\Antirrabico\ProyectoAntirrabico\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
