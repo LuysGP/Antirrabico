@@ -85,7 +85,7 @@
 
                         </StackLayout>
 
-                        <Grid RowDefinitions="50,50,50,50,50,50,50" ColumnDefinitions="100,200"
+                        <Grid RowDefinitions="50,50,50,50,50,50,50" ColumnDefinitions="100,230"
                           HorizontalOptions="CenterAndExpand"
                           Margin="0,25,0,0">
 

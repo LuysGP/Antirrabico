@@ -38,7 +38,8 @@
                        HeightRequest="40"/>
 
                 <Entry Placeholder="Contraseña"
-                           PlaceholderColor="Gray"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="#F6F6F6"
                        Text="{Binding txtContraseña}"
                        WidthRequest="280"
                        FontSize="20"

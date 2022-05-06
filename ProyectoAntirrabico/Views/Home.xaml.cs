@@ -18,8 +18,10 @@ namespace ProyectoAntirrabico.Views
         {
             InitializeComponent();
 
+            //ESPECIFICACION DONDE SE INDICA QUE LA BARRA DE NAVEGACION SE ENCONTRARA EN LA PARTE BAJA
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
-            On<Android>().SetIsSmoothScrollEnabled(true);
+
+            On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
     }
 }

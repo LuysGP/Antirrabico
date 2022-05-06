@@ -4,19 +4,19 @@
              x:Class="ProyectoAntirrabico.Views.ListaMascotasPerdidas"
              NavigationPage.HasNavigationBar="False"
              Title="Busqueda">
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="#F5F5F5">
 
-            <StackLayout Orientation="Horizontal" VerticalOptions="Start"
+    <StackLayout BackgroundColor="#F5F5F5">
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start"
                      BackgroundColor="White">
 
-                <Image Source="logoAjustado.png"
+            <Image Source="logoAjustado.png"
                    HeightRequest="80"
                    HorizontalOptions="StartAndExpand"
                    VerticalOptions="Center"
                    Margin="20,0,0,0"/>
 
-                <Frame HasShadow="False"
+            <Frame HasShadow="False"
                    BorderColor="#3C4562"
                    CornerRadius="50"
                    HorizontalOptions="End"
@@ -27,41 +27,40 @@
                    Padding="0"
                    Margin="15">
 
-                    <StackLayout VerticalOptions="Center">
-                        <Image Source="user.png"
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="user.png"
                            WidthRequest="25"/>
-                    </StackLayout>
+                </StackLayout>
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding IrLogincommand}"/>
-                    </Frame.GestureRecognizers>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrLogincommand}"/>
+                </Frame.GestureRecognizers>
 
-                </Frame>
-            </StackLayout>
+            </Frame>
+        </StackLayout>
 
-            <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
               Margin="10,0,10,0">
-                <ScrollView>
-                    <Grid ColumnDefinitions="*,*">
-                        <StackLayout x:Name="Izquierda" Grid.Column="0">
+            <ScrollView>
+                <Grid ColumnDefinitions="*,*">
+                    <StackLayout x:Name="Izquierda" Grid.Column="0">
 
-                        </StackLayout>
-                        <StackLayout x:Name="Derecha" Grid.Column="1">
+                    </StackLayout>
+                    <StackLayout x:Name="Derecha" Grid.Column="1">
 
-                        </StackLayout>
-                    </Grid>
-                </ScrollView>
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
 
-                <Image Source="add.png"
+            <Image Source="add.png"
                    VerticalOptions="End"
                    HorizontalOptions="End"
                    HeightRequest="55"
                    Margin="15,10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding IrFormMPcommand}"/>
-                    </Image.GestureRecognizers>
-                </Image>
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrFormMPcommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </StackLayout>
 </ContentPage>

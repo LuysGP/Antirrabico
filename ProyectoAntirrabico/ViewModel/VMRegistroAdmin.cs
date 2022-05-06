@@ -139,8 +139,9 @@ namespace ProyectoAntirrabico.ViewModel
                 return;
             }
 
-            await InsertarAdmin();
             CrearAutenticacion();
+            await InsertarAdmin();
+            
 
             await DisplayAlert("Listo","Se ha insertado el nuevo admin","Ok");
 

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAntirrabico.Views.Listas.ListaPerdidas"
+             NavigationPage.HasNavigationBar="False"
+             Title="ListaPerdidas">
+
+    <StackLayout BackgroundColor="#F5F5F5">
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start"
+                     BackgroundColor="White">
+
+            <Image Source="logoAjustado.png"
+                   HeightRequest="80"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+
+            <Frame HasShadow="False"
+                   BorderColor="#3C4562"
+                   CornerRadius="50"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   HeightRequest="40"
+                   WidthRequest="40"
+                   BackgroundColor="#C4C4C4"
+                   Padding="0"
+                   Margin="15">
+
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="user.png"
+                           WidthRequest="25"/>
+                </StackLayout>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrLogincommand}"/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+        </StackLayout>
+
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
+              Margin="10,0,10,0">
+            <ScrollView>
+                <Grid ColumnDefinitions="*,*">
+                    <StackLayout x:Name="Izquierda" Grid.Column="0">
+
+                    </StackLayout>
+                    <StackLayout x:Name="Derecha" Grid.Column="1">
+
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

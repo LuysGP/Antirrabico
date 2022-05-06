@@ -80,7 +80,7 @@ namespace ProyectoAntirrabico.ViewModel
                 Preferences.Set("MyFirebaseRefresToken", serializedcontnet);
 
                 //Navegacion a la view FormMascotasAdopcion
-                await Navigation.PushAsync(new FormMascotasAdopcion());
+                await Navigation.PushAsync(new HomeAdmin());
 
                 //Se limpian los entrys del correo y contraseña
                 txtContraseña = null;
