@@ -19,7 +19,7 @@
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/MainTheme" android:name="crc642089de41555e8a3a.MainActivity" />
-    <activity android:configChanges="screenSize" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:theme="@style/SplashTheme" android:name="crc642089de41555e8a3a.SplashScreen" android:exported="true">
+    <activity android:configChanges="screenSize" android:icon="@mipmap/ic_launcher" android:label="Zoolo+cotas" android:noHistory="true" android:theme="@style/SplashTheme" android:name="crc642089de41555e8a3a.SplashScreen" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

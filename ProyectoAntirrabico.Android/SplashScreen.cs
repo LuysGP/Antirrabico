@@ -12,7 +12,7 @@ using System.Text;
 
 namespace ProyectoAntirrabico.Droid
 {
-    [Activity(Label = "Zoolo+cotas", Icon = "@mipmap/ic_launcher", Theme = "@style/SplashTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize)]
+    [Activity(Label = "Zoolo+cotas", Icon = "@mipmap/ic_launcher", Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize)]
 
     public class SplashScreen : Activity
     {
