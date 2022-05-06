@@ -16,34 +16,127 @@ namespace ProyectoAntirrabico.ViewModel
     public class VMFormMascotasAdopcion : BaseViewModel
     {
         #region VARIABLES
-        string _Texto;
+        string _txtLinkFoto;
+        string _txtArea;
+        string _txtEspecie;
+        string _txtSexo;
+        string _txtEdad;
+        string _txtColores;
+        string _txtRaza;
         #endregion
+
         #region CONSTRUCTOR
         public VMFormMascotasAdopcion(INavigation navigation)
         {
             Navigation = navigation;
         }
         #endregion
+
         #region OBJETOS
-        public string Texto
+        public string txtLinkFoto
         {
-            get { return _Texto; }
-            set { SetValue(ref _Texto, value); }
+            get { return _txtLinkFoto; }
+            set { SetValue(ref _txtLinkFoto, value); }
         }
+
+        public string txtArea
+        {
+            get { return _txtArea; }
+            set { SetValue(ref _txtArea, value); }
+        }
+
+        public string SeleccionArea
+        {
+            get { return _txtArea; }
+            set
+            {
+                SetProperty(ref _txtArea, value);
+                txtArea = _txtArea;
+            }
+        }
+        public string txtEspecie
+        {
+            get { return _txtEspecie; }
+            set { SetValue(ref _txtEspecie, value); }
+        }
+
+        public string txtSexo
+        {
+            get { return _txtSexo; }
+            set { SetValue(ref _txtSexo, value); }
+        }
+
+        public string SeleccionSexo
+        {
+            get { return _txtSexo; }
+            set
+            {
+                SetProperty(ref _txtSexo, value);
+                txtSexo = _txtSexo;
+            }
+        }
+
+        public string txtEdad
+        {
+            get { return _txtEdad; }
+            set { SetValue(ref _txtEdad, value); }
+        }
+
+        public string txtColores
+        {
+            get { return _txtColores; }
+            set { SetValue(ref _txtColores, value); }
+        }
+
+        public string txtRaza
+        {
+            get { return _txtRaza; }
+            set { SetValue(ref _txtRaza, value); }
+        }
+
         #endregion
         #region PROCESOS
-        public async Task ProcesoAsyncrono()
+        public async void TomarFoto()
         {
-            await DisplayAlert("Funcion", "Funciona", "Ok");
+            var camara = new StoreCameraMediaOptions();
+            camara.PhotoSize = PhotoSize.Full;
+            camara.SaveToAlbum = true;
+
+            var foto = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(camara);
+
+            if (foto != null)
+            {
+                Foto = ImageSource.FromStream(() =>
+                {
+                    return foto.GetStream();
+                });
+            }
         }
-        public void ProcesoSimple()
+
+        public async Task AbrirNavegador()
         {
-            
+            await Browser.OpenAsync("https://imgbb.com/", BrowserLaunchMode.SystemPreferred);
         }
+
+        public void Cancelar()
+        {
+            Foto = null;
+            txtLinkFoto = null;
+            SeleccionArea = null;
+            txtEspecie = null;
+            SeleccionSexo = null;
+            txtEdad = null;
+            txtColores = null;
+            txtRaza = null;
+
+            Navigation.PopAsync();
+        }
+
         #endregion
         #region COMANDOS
-        public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
-        public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
+        public ICommand AbrirNavegadorcommand => new Command(async () => await AbrirNavegador());
+        public ICommand TomarFotocommand => new Command(TomarFoto);
+        public ICommand Cancelarcommand => new Command(Cancelar);
         #endregion
     }
 }
