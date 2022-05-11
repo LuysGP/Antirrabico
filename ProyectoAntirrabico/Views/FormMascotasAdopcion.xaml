@@ -104,7 +104,8 @@
                                 <Entry FontSize="14"
                                        TextColor="Black"
                                        PlaceholderColor="Gray"
-                                       Placeholder="Pegar link"/>
+                                       Placeholder="Pegar link"
+                                       Text="{Binding txtLinkFoto}"/>
                             </Frame>
 
 
@@ -122,7 +123,8 @@
                                         TitleColor="Gray"
                                         Title="Seleccionar"
                                         TextColor="Black"
-                                        FontSize="18">
+                                        FontSize="18"
+                                    SelectedItem="{Binding SeleccionArea}">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:String}">
                                         <x:String>Tijuana</x:String>
@@ -145,7 +147,8 @@
                                    CornerRadius="2"
                                    Margin="0,4">
                                 
-                                <Entry TextColor="Black"/>
+                                <Entry TextColor="Black"
+                                       Text="{Binding txtEspecie}"/>
                             </Frame>
                             
 
@@ -160,7 +163,8 @@
                                     Title="Seleccionar"
                                     TitleColor="Gray"
                                     TextColor="Black"
-                                    FontSize="18">
+                                    FontSize="18"
+                                    SelectedItem="{Binding SeleccionSexo}">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:String}">
                                         <x:String>Macho</x:String>
@@ -182,7 +186,8 @@
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
 
-                                <Entry TextColor="Black"/>
+                                <Entry TextColor="Black"
+                                       Text="{Binding txtEdad}"/>
                                 
                             </Frame>
                             
@@ -200,7 +205,8 @@
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
                                 
-                                <Entry TextColor="Black"/>
+                                <Entry TextColor="Black"
+                                       Text="{Binding txtColores}"/>
                                 
                             </Frame>
 
@@ -216,7 +222,10 @@
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
-                                <Entry TextColor="Black" />
+                                
+                                <Entry TextColor="Black"
+                                       Text="{Binding txtRaza}"/>
+                                
                             </Frame>
                             
 
@@ -264,7 +273,7 @@
                                 </StackLayout>
 
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding ProcesoAsyncommand}"/>
+                                    <TapGestureRecognizer Command="{Binding Insertarcommand}"/>
                                 </Frame.GestureRecognizers>
 
                             </Frame>

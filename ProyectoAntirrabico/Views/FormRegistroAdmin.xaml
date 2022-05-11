@@ -136,9 +136,9 @@
                             <Picker Grid.Column="1" Grid.Row="3"
                                     TitleColor="Gray"
                                     TextColor="Black"
-                                Title="Seleccionar"
-                                FontSize="18"
-                                SelectedItem="{Binding SeleccionArea}">
+                                    Title="Seleccionar"
+                                    FontSize="18"
+                                    SelectedItem="{Binding SeleccionArea}">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:String}">
                                         <x:String>Tijuana</x:String>

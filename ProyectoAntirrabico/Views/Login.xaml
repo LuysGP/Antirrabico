@@ -19,7 +19,7 @@
                        BackgroundColor="#F6F6F6"
                        Text="{Binding txtCorreo}"
                        WidthRequest="280"
-                       FontSize="18"
+                       FontSize="20"
                        TextColor="#3C4562"
                        HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand">

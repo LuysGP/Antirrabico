@@ -132,9 +132,33 @@ namespace ProyectoAntirrabico.ViewModel
 
         }
 
+        public async Task InsertarMP()
+        {
+            var funcion = new DMascotasPerdidas();
+            var parametros = new MMascotasPerdidas();
+
+
+            //Se asignan los valores de los objetos
+            parametros.LinkFoto = txtLinkFoto;
+            parametros.Area = SeleccionArea;
+            parametros.Especie = txtEspecie;
+            parametros.Sexo = SeleccionSexo;
+            parametros.Edad = txtEdad;
+            parametros.Colores = txtColores;
+            parametros.Raza = txtRaza;
+
+            await funcion.InsertarMascotasPerdidas(parametros);
+
+            await DisplayAlert("Listo", "Se ha registrado otra mascota", "Ok");
+
+            await Navigation.PopAsync();
+           
+        }
+
         #endregion
         #region COMANDOS
         public ICommand AbrirNavegadorcommand => new Command(async () => await AbrirNavegador());
+        public ICommand InsertarMPcommand => new Command(async () => await InsertarMP());
         public ICommand TomarFotocommand => new Command(TomarFoto);
         public ICommand Cancelarcommand => new Command(Cancelar);
         #endregion

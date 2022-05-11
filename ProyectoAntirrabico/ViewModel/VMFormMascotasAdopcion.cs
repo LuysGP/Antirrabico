@@ -118,6 +118,22 @@ namespace ProyectoAntirrabico.ViewModel
             await Browser.OpenAsync("https://imgbb.com/", BrowserLaunchMode.SystemPreferred);
         }
 
+        public async Task Insertar()
+        {
+            var funcion = new DMascotasAdopcion();
+            var parametros = new MMascotasAdopocion();
+
+            parametros.LinkFoto = txtLinkFoto;
+            parametros.Area = SeleccionArea;
+            parametros.Especie = txtEspecie;
+            parametros.Sexo = SeleccionSexo;
+            parametros.Edad = txtEdad;
+            parametros.Colores = txtColores;
+            parametros.Raza = txtRaza;
+
+            await funcion.InsertarMA(parametros);
+            await Navigation.PopAsync();
+        }
         public void Cancelar()
         {
             Foto = null;
@@ -135,6 +151,7 @@ namespace ProyectoAntirrabico.ViewModel
         #endregion
         #region COMANDOS
         public ICommand AbrirNavegadorcommand => new Command(async () => await AbrirNavegador());
+        public ICommand Insertarcommand => new Command(async () => await Insertar());
         public ICommand TomarFotocommand => new Command(TomarFoto);
         public ICommand Cancelarcommand => new Command(Cancelar);
         #endregion
