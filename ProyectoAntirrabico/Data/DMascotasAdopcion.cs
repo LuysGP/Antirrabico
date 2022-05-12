@@ -30,6 +30,23 @@ namespace ProyectoAntirrabico.Data
                 }
                 );
         }
+
+        //CONSULTAR
+        public async Task<List<MMascotasAdopocion>> MostrarMA()
+        {
+            return (await CConexion.firebase
+                .Child("MascotasAdopcion")
+                .OnceAsync<MMascotasAdopocion>()).Select(item => new MMascotasAdopocion
+                {
+                    IdMascotaAdopcion = item.Key,
+                    LinkFoto = item.Object.LinkFoto,
+                    Nombre = item.Object.Nombre,
+                    Area = item.Object.Area,
+                    Sexo = item.Object.Sexo,
+                    Edad = item.Object.Edad,
+                    Raza = item.Object.Raza
+                }).ToList();
+        }
     }
 
 }

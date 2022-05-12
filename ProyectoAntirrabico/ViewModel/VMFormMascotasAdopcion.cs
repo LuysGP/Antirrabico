@@ -17,6 +17,7 @@ namespace ProyectoAntirrabico.ViewModel
     {
         #region VARIABLES
         string _txtLinkFoto;
+        string _txtNombre;
         string _txtArea;
         string _txtEspecie;
         string _txtSexo;
@@ -43,6 +44,11 @@ namespace ProyectoAntirrabico.ViewModel
         {
             get { return _txtArea; }
             set { SetValue(ref _txtArea, value); }
+        }
+        public string txtNombre
+        {
+            get { return _txtNombre; }
+            set { SetValue(ref _txtNombre, value); }
         }
 
         public string SeleccionArea
@@ -124,6 +130,7 @@ namespace ProyectoAntirrabico.ViewModel
             var parametros = new MMascotasAdopocion();
 
             parametros.LinkFoto = txtLinkFoto;
+            parametros.Nombre = txtNombre;
             parametros.Area = SeleccionArea;
             parametros.Especie = txtEspecie;
             parametros.Sexo = SeleccionSexo;
@@ -141,6 +148,7 @@ namespace ProyectoAntirrabico.ViewModel
             SeleccionArea = null;
             txtEspecie = null;
             SeleccionSexo = null;
+            txtNombre = null;
             txtEdad = null;
             txtColores = null;
             txtRaza = null;

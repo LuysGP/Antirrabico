@@ -16,7 +16,7 @@ namespace ProyectoAntirrabico.Views
         public ListaMascotasAdopcion()
         {
             InitializeComponent();
-            BindingContext = new VMListaMascotasAdopcion(Navigation);
+            BindingContext = new VMListaMascotasAdopcion(Navigation,Derecha,Izquierda);
         }
     }
 }

@@ -45,7 +45,7 @@
                      HorizontalOptions="Center"
                      VerticalOptions="Center">
 
-                <Frame HeightRequest="700"
+                <Frame HeightRequest="750"
                        WidthRequest="380"
                        CornerRadius="20"
                        Padding="1">
@@ -85,7 +85,7 @@
 
                         </StackLayout>
 
-                        <Grid RowDefinitions="50,50,50,50,50,50,50" ColumnDefinitions="100,230"
+                        <Grid RowDefinitions="50,50,50,50,50,50,50,50" ColumnDefinitions="100,230"
                           HorizontalOptions="CenterAndExpand"
                           Margin="0,25,0,0">
 
@@ -107,19 +107,31 @@
                                        Placeholder="Pegar link"
                                        Text="{Binding txtLinkFoto}"/>
                             </Frame>
-
-
-
-
+                            
                             <Label Grid.Row="1" Grid.Column="0"
+                               Text="Nombre:"
+                               VerticalOptions="Center"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Gray"
+                               HorizontalOptions="End"/>
+                            <Frame Grid.Column="1" Grid.Row="1"
+                                   Padding="0"
+                                   HasShadow="{OnPlatform Android=true, iOS=false}"
+                                   CornerRadius="2"
+                                   Margin="0,3">
+                                <Entry TextColor="Black"
+                                       Text="{Binding txtNombre}"/>
+                            </Frame>
+
+                            <Label Grid.Row="2" Grid.Column="0"
                                    Text="Área:"
                                    TextColor="Gray"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    HorizontalOptions="End"/>
-
-                            <Picker Grid.Column="1" Grid.Row="1"
+                            <Picker Grid.Column="1" Grid.Row="2"
                                         TitleColor="Gray"
                                         Title="Seleccionar"
                                         TextColor="Black"
@@ -134,14 +146,14 @@
                             </Picker>
 
 
-                            <Label Grid.Row="2" Grid.Column="0"
+                            <Label Grid.Row="3" Grid.Column="0"
                                    Text="Especie:"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    TextColor="Gray"
                                    HorizontalOptions="End"/>
-                            <Frame Grid.Row="2" Grid.Column="1"
+                            <Frame Grid.Row="3" Grid.Column="1"
                                    Padding="0"
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
@@ -152,14 +164,14 @@
                             </Frame>
                             
 
-                            <Label Grid.Row="3" Grid.Column="0"
+                            <Label Grid.Row="4" Grid.Column="0"
                                    Text="Sexo:"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    HorizontalOptions="End"
                                    TextColor="Gray"/>
-                            <Picker Grid.Column="1" Grid.Row="3"
+                            <Picker Grid.Column="1" Grid.Row="4"
                                     Title="Seleccionar"
                                     TitleColor="Gray"
                                     TextColor="Black"
@@ -173,14 +185,14 @@
                                 </Picker.ItemsSource>
                             </Picker>
 
-                            <Label Grid.Row="4" Grid.Column="0"
+                            <Label Grid.Row="5" Grid.Column="0"
                                    Text="Edad:"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    HorizontalOptions="End"
                                    TextColor="Gray"/>
-                            <Frame Grid.Row="4" Grid.Column="1"
+                            <Frame Grid.Row="5" Grid.Column="1"
                                    Padding="0"
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
@@ -192,14 +204,14 @@
                             </Frame>
                             
 
-                            <Label Grid.Row="5" Grid.Column="0"
+                            <Label Grid.Row="6" Grid.Column="0"
                                    Text="Colores:"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    HorizontalOptions="End"
                                    TextColor="Gray"/>
-                            <Frame Grid.Row="5" Grid.Column="1"
+                            <Frame Grid.Row="6" Grid.Column="1"
                                    Padding="0"
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
@@ -210,14 +222,14 @@
                                 
                             </Frame>
 
-                            <Label Grid.Row="6" Grid.Column="0"
+                            <Label Grid.Row="7" Grid.Column="0"
                                    Text="Raza:"
                                    VerticalOptions="Center"
                                    FontSize="18"
                                    FontAttributes="Bold"
                                    HorizontalOptions="End"
                                    TextColor="Gray"/>
-                            <Frame Grid.Row="6" Grid.Column="1"
+                            <Frame Grid.Row="7" Grid.Column="1"
                                    Padding="0"
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
