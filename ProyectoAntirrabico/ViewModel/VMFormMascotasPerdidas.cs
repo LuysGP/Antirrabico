@@ -50,7 +50,7 @@ namespace ProyectoAntirrabico.ViewModel
             set
             {
                 SetProperty(ref _txtArea, value);
-                txtArea = _txtArea;
+                txtArea = "Localizado en "+_txtArea;
             }
         }
         public string txtEspecie

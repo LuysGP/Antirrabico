@@ -13,10 +13,12 @@ namespace ProyectoAntirrabico.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaMascotasAdopcion : ContentPage
     {
+
         public ListaMascotasAdopcion()
         {
             InitializeComponent();
-            BindingContext = new VMListaMascotasAdopcion(Navigation,Derecha,Izquierda);
+            BindingContext = new VMListaMascotasAdopcion(Navigation);
         }
+
     }
 }

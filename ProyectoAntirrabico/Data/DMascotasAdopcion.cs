@@ -8,6 +8,7 @@ using Firebase.Database.Query;
 using System.Linq;
 using System.Threading.Tasks;
 using Firebase.Database;
+using System.Collections.ObjectModel;
 
 namespace ProyectoAntirrabico.Data
 {
@@ -22,6 +23,7 @@ namespace ProyectoAntirrabico.Data
                 {
                     Area = parametros.Area,
                     Colores = parametros.Colores,
+                    Nombre = parametros.Nombre,
                     Edad = parametros.Edad,
                     Especie = parametros.Especie,
                     LinkFoto = parametros.LinkFoto,
@@ -32,19 +34,29 @@ namespace ProyectoAntirrabico.Data
         }
 
         //CONSULTAR
-        public async Task<List<MMascotasAdopocion>> MostrarMA()
+        public async Task<ObservableCollection<MMascotasAdopocion>> MostrarMA()
+        {
+            var data = await Task.Run(() => CConexion.firebase
+            .Child("MascotasAdopcion")
+            .AsObservable<MMascotasAdopocion>()
+            .AsObservableCollection());
+
+            return data;
+        }
+
+        public async Task<List<MMascotasAdopocion>> MostrarMAList()
         {
             return (await CConexion.firebase
                 .Child("MascotasAdopcion")
-                .OnceAsync<MMascotasAdopocion>()).Select(item => new MMascotasAdopocion
+                .OnceAsync<MMascotasAdopocion>()).Select(Mascota => new MMascotasAdopocion
                 {
-                    IdMascotaAdopcion = item.Key,
-                    LinkFoto = item.Object.LinkFoto,
-                    Nombre = item.Object.Nombre,
-                    Area = item.Object.Area,
-                    Sexo = item.Object.Sexo,
-                    Edad = item.Object.Edad,
-                    Raza = item.Object.Raza
+                    IdMascotaAdopcion = Mascota.Key,
+                    LinkFoto = Mascota.Object.LinkFoto,
+                    Nombre = Mascota.Object.Nombre,
+                    Area = Mascota.Object.Area,
+                    Edad = Mascota.Object.Edad,
+                    Raza = Mascota.Object.Raza,
+                    Sexo = Mascota.Object.Sexo
                 }).ToList();
         }
     }

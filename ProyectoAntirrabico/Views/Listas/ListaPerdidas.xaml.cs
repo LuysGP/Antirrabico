@@ -16,7 +16,7 @@ namespace ProyectoAntirrabico.Views.Listas
         public ListaPerdidas()
         {
             InitializeComponent();
-            BindingContext = new VMListaPerdidas(Navigation);
+            BindingContext = new VMListaPerdidas(Navigation,Izquierda,Derecha);
         }
     }
 }

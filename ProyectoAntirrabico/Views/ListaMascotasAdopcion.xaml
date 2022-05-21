@@ -46,11 +46,18 @@
 
         <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
               Margin="10,0,10,0">
-            <ScrollView>
-                <Grid ColumnDefinitions="*,*">
-                    <StackLayout x:Name="Izquierda" Grid.Column="0">
-                        <!--<Frame BackgroundColor="White"--><!--
-                               HeightRequest="320"
+
+            <CollectionView ItemsSource="{Binding ListaMA}" Margin="5">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"
+                                     HorizontalItemSpacing="15"
+                                     VerticalItemSpacing="12"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White"
+                               HeightRequest="345"
                                CornerRadius="10"
                                Padding="0"
                                HasShadow="False"
@@ -62,33 +69,38 @@
                                        HasShadow="False"
                                        CornerRadius="10"
                                        HeightRequest="125">
-                                    <Image Source="https://i.ibb.co/SdHL1Nd/husky-siberiano-redes.jpg"
+                                    <Image Source="{Binding LinkFoto}"
                                        HeightRequest="125"
                                        HorizontalOptions="Center"
                                        />
                                 </Frame>
-                                <Label Text="Duquesa"
+                                <Label Text="{Binding Nombre}"
                                        TextColor="Black"
                                        FontAttributes="Bold"
                                        FontSize="22"
                                        HorizontalOptions="Center"
                                        CharacterSpacing="1"/>
-                                <Label Text="3 años"
+                                <Label Text="{Binding Edad}"
                                        TextColor="Gray"
                                        FontSize="18"
                                        HorizontalOptions="Center"/>
-                                <Label Text="Hembra"
+                                <Label Text="{Binding Sexo}"
                                        TextColor="Gray"
                                        FontSize="18"
                                        HorizontalOptions="Center"
                                        Margin="0,-5,0,0"/>
-                                <Label Text="Husky"
+                                <Label Text="{Binding Raza}"
                                        TextColor="Gray"
                                        FontSize="18"
                                        HorizontalOptions="Center"
                                        Margin="0,-5,0,0"
                                        CharacterSpacing="2"/>
-                                
+                                <Label Text="{Binding Area}"
+                                       TextColor="Gray"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"
+                                       Margin="0,-5,0,0"/>
+
                                 <StackLayout Orientation="Horizontal"
                                              Margin="10" 
                                              HorizontalOptions="Center">
@@ -101,7 +113,7 @@
                                            Source="https://i.ibb.co/2g2Yztc/edit.png"
                                            VerticalOptions="Center"
                                            HorizontalOptions="Center"/>
-                                        
+
                                     </Frame>
                                     <Frame BackgroundColor="#d63031"
                                            HeightRequest="30"
@@ -112,17 +124,14 @@
                                            HorizontalOptions="Center"/>
                                     </Frame>
                                 </StackLayout>
-                                
+
                             </StackLayout>
-                            
-                        </Frame>-->
-                    </StackLayout>
-                    <StackLayout x:Name="Derecha" Grid.Column="1">
 
-                    </StackLayout>
-                </Grid>
-            </ScrollView>
-
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
             <Image Source="add.png"
                    VerticalOptions="End"
                    HorizontalOptions="End"

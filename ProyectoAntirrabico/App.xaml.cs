@@ -12,7 +12,7 @@ namespace ProyectoAntirrabico
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new ListaMascotasAdopcion());
+            MainPage = new NavigationPage (new Home());
         }
 
         protected override void OnStart()

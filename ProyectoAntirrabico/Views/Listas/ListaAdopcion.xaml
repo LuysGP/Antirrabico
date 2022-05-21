@@ -46,13 +46,69 @@
 
         <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
               Margin="10,0,10,0">
+            
             <ScrollView>
                 <Grid ColumnDefinitions="*,*">
                     <StackLayout x:Name="Izquierda" Grid.Column="0">
+                        <!--<Frame BackgroundColor="White"
+                               HeightRequest="330"
+                               CornerRadius="15"
+                               Padding="0"
+                               HasShadow="False"
+                               Margin="10">
 
+                            <StackLayout>
+                                <Frame Margin="10,5,10,0"
+                                       Padding="0"
+                                       HasShadow="False"
+                                       CornerRadius="10"
+                                       HeightRequest="125">
+                                    <Image Source="https://i.ibb.co/SdHL1Nd/husky-siberiano-redes.jpg"
+                                       HeightRequest="125"
+                                       HorizontalOptions="Center"
+                                       />
+                                </Frame>
+                                <Label Text="Duquesa"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="22"
+                                       HorizontalOptions="Center"
+                                       CharacterSpacing="1"/>
+                                <Label Text="3 años"
+                                       TextColor="Gray"
+                                       FontSize="18"
+                                       HorizontalOptions="Center"/>
+                                <Label Text="Hembra"
+                                       TextColor="Gray"
+                                       FontSize="18"
+                                       HorizontalOptions="Center"
+                                       Margin="0,-5,0,0"/>
+                                <Label Text="Localizada en Tijuana"
+                                       TextColor="Gray"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"
+                                       Margin="0,-5,0,0"
+                                       HorizontalTextAlignment="Center"/>
+
+                               
+                                    <Button CornerRadius="10"
+                                            BackgroundColor="#F18043"
+                                            TextTransform="None"
+                                            TextColor="White"
+                                            FontSize="15"
+                                            FontAttributes="Bold"
+                                            Text="¡Lo quiero adoptar!"
+                                            Margin="5"
+                                            HeightRequest="45"
+                                            HorizontalOptions="Center"/>
+                               
+
+                            </StackLayout>
+
+                        </Frame>-->
                     </StackLayout>
                     <StackLayout x:Name="Derecha" Grid.Column="1">
-
+                        
                     </StackLayout>
                 </Grid>
             </ScrollView>
