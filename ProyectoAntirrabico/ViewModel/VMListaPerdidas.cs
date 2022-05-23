@@ -23,6 +23,7 @@ namespace ProyectoAntirrabico.ViewModel
         {
             Navigation = navigation;
             MostrarMascotaPerdida(Izquierda,Derecha);
+            ValidarConexionInternet();
         }
         #endregion
         #region OBJETOS

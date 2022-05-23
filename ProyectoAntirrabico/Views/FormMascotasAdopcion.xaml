@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAntirrabico.Views.FormMascotasAdopcion"
+             xmlns:ValidacionesInternet="clr-namespace:ProyectoAntirrabico.Views.ValidarInternet"
              NavigationPage.HasNavigationBar="False">
     
     <ContentPage.Content>
@@ -11,7 +12,7 @@
             <StackLayout Grid.Row="0"
                      Orientation="Horizontal"
                      BackgroundColor="White"
-                     Margin="0,0,0,0">
+                     Margin="0,0,0,0" IsVisible="{Binding Conectado}">
 
                 <Image Source="logoAjustado.png"
                    HeightRequest="140"/>
@@ -43,7 +44,7 @@
 
             <StackLayout Grid.Row="1"
                      HorizontalOptions="Center"
-                     VerticalOptions="Center">
+                     VerticalOptions="Center" IsVisible="{Binding Conectado}">
 
                 <Frame HeightRequest="750"
                        WidthRequest="380"
@@ -107,7 +108,7 @@
                                        Placeholder="Pegar link"
                                        Text="{Binding txtLinkFoto}"/>
                             </Frame>
-                            
+
                             <Label Grid.Row="1" Grid.Column="0"
                                Text="Nombre:"
                                VerticalOptions="Center"
@@ -158,11 +159,11 @@
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
                                    Margin="0,4">
-                                
+
                                 <Entry TextColor="Black"
                                        Text="{Binding txtEspecie}"/>
                             </Frame>
-                            
+
 
                             <Label Grid.Row="4" Grid.Column="0"
                                    Text="Sexo:"
@@ -200,9 +201,9 @@
 
                                 <Entry TextColor="Black"
                                        Text="{Binding txtEdad}"/>
-                                
+
                             </Frame>
-                            
+
 
                             <Label Grid.Row="6" Grid.Column="0"
                                    Text="Colores:"
@@ -216,10 +217,10 @@
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
-                                
+
                                 <Entry TextColor="Black"
                                        Text="{Binding txtColores}"/>
-                                
+
                             </Frame>
 
                             <Label Grid.Row="7" Grid.Column="0"
@@ -234,12 +235,12 @@
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
-                                
+
                                 <Entry TextColor="Black"
                                        Text="{Binding txtRaza}"/>
-                                
+
                             </Frame>
-                            
+
 
 
                         </Grid>
@@ -295,7 +296,8 @@
                 </Frame>
 
             </StackLayout>
-        </Grid>
 
+            <ValidacionesInternet:ValidacionesInternet IsVisible="{Binding SinConexion}" VerticalOptions="FillAndExpand" Grid.RowSpan="2"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

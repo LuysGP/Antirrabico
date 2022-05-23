@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAntirrabico.Views.FormMascotasPerdidas"
+             xmlns:ValidarInternet="clr-namespace:ProyectoAntirrabico.Views.ValidarInternet"
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
@@ -9,9 +10,10 @@
           BackgroundColor="#F6F6F6">
 
             <StackLayout Grid.Row="0"
-                     Orientation="Horizontal"
-                     BackgroundColor="White"
-                     Margin="0,0,0,0">
+                         Orientation="Horizontal"
+                         BackgroundColor="White"
+                         Margin="0,0,0,0"
+                         IsVisible="{Binding Conectado}">
 
                 <Image Source="logoAjustado.png"
                    HeightRequest="140"/>
@@ -42,8 +44,9 @@
             </StackLayout>
 
             <StackLayout Grid.Row="1"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center">
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         IsVisible="{Binding Conectado}">
 
                 <Frame HeightRequest="700"
                        WidthRequest="380"
@@ -222,7 +225,7 @@
                                    HasShadow="{OnPlatform Android=true, iOS=false}"
                                    CornerRadius="2"
                                    Margin="0,0,0,4">
-                                
+
                                 <Entry TextColor="Black" 
                                        Text="{Binding txtRaza}"/>
                             </Frame>
@@ -282,6 +285,9 @@
                 </Frame>
 
             </StackLayout>
+
+            <ValidarInternet:ValidacionesInternet IsVisible="{Binding SinConexion}" VerticalOptions="FillAndExpand" Grid.RowSpan="2"/>
+            
         </Grid>
 
     </ContentPage.Content>

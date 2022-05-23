@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using Xamarin.Essentials;
 
 namespace ProyectoAntirrabico.ViewModel
 {
@@ -91,5 +92,57 @@ namespace ProyectoAntirrabico.ViewModel
 
             OnPropertyChanged(propertyName);
         }
+
+        #region ValidarInternet
+        bool _Conectado;
+        bool _SinConexion;
+
+        public bool Conectado
+        {
+            get { return this._Conectado; }
+            set
+            {
+                SetValue(ref this._Conectado, value);
+            }
+        }
+
+        public bool SinConexion
+        {
+            get { return this._SinConexion; }
+            set
+            {
+                SetValue(ref this._SinConexion, value);
+            }
+        }
+
+        public void ValidarConexionInternet()
+        {
+            var time = TimeSpan.FromSeconds(1);
+            Device.StartTimer(time, () =>
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    ProbarConexion();
+                }
+                );
+
+                return true;
+            });
+        }
+
+        public void ProbarConexion()
+        {
+            if(Connectivity.NetworkAccess!=NetworkAccess.Internet)
+            {
+                Conectado = false;
+                SinConexion = true;
+            }
+            else
+            {
+                Conectado = true;
+                SinConexion = false;
+            }
+        }
+        #endregion
     }
 }

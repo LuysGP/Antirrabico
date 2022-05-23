@@ -30,6 +30,7 @@ namespace ProyectoAntirrabico.ViewModel
         public VMFormMascotasAdopcion(INavigation navigation)
         {
             Navigation = navigation;
+            ValidarConexionInternet();
         }
         #endregion
 

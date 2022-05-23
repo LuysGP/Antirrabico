@@ -7,9 +7,8 @@
             SelectedTabColor="#F18043"
             UnselectedTabColor="White"
             NavigationPage.HasNavigationBar="False">
-    
-  <!--Pages can be added as references or inline-->
+
+    <!--Pages can be added as references or inline-->
     <Local:ListaPerdidas Title="Busqueda" IconImageSource="searchSelect.png" />
     <Local:ListaAdopcion Title="Adopción" IconImageSource="adopcionSelect.png"/>
-    
 </TabbedPage>

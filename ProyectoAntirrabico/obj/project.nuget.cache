@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5wpK91ilLOgjPWKLcf1T2mlVJLzfKd1qeu5Dk+N+wobY33jXCN85/4ZDIREgCf9gDMzTlmUpVUyANajSBsdA5w==",
+  "dgSpecHash": "bM5a6d9tSS4/ohh6hV/+sKdeJbenHeHUOgCxYludObUOEypn73PuaXerkgOqWoKU0UQt9XRTZZFChILq4c6/KQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fernando Cano\\Documents\\Semestre 6\\Antirrabico\\ProyectoAntirrabico\\ProyectoAntirrabico.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fernando Cano\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
     "C:\\Users\\Fernando Cano\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\Fernando Cano\\.nuget\\packages\\firebasedatabase.net\\4.0.7\\firebasedatabase.net.4.0.7.nupkg.sha512",
     "C:\\Users\\Fernando Cano\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",

@@ -22,6 +22,7 @@ namespace ProyectoAntirrabico.ViewModel
         public VMLogin(INavigation navigation)
         {
             Navigation = navigation;
+            ValidarConexionInternet();
         }
         #endregion
 

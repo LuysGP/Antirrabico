@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAntirrabico.Views.Listas.ListaAdopcion"
              NavigationPage.HasNavigationBar="False"
+             xmlns:ValidarInternet="clr-namespace:ProyectoAntirrabico.Views.ValidarInternet"
              Title="ListaAdopcion">
 
     <StackLayout BackgroundColor="#F5F5F5">
 
         <StackLayout Orientation="Horizontal" VerticalOptions="Start"
-                     BackgroundColor="White">
+                     BackgroundColor="White" IsVisible="{Binding Conectado}">
 
             <Image Source="logoAjustado.png"
                    HeightRequest="80"
@@ -45,8 +46,8 @@
         </StackLayout>
 
         <Grid VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5"
-              Margin="10,0,10,0">
-            
+              Margin="10,0,10,0" IsVisible="{Binding Conectado}">
+
             <ScrollView>
                 <Grid ColumnDefinitions="*,*">
                     <StackLayout x:Name="Izquierda" Grid.Column="0">
@@ -108,12 +109,13 @@
                         </Frame>-->
                     </StackLayout>
                     <StackLayout x:Name="Derecha" Grid.Column="1">
-                        
+
                     </StackLayout>
                 </Grid>
             </ScrollView>
         </Grid>
 
-    </StackLayout>
+        <ValidarInternet:ValidacionesInternet IsVisible="{Binding SinConexion}" VerticalOptions="FillAndExpand"/>
 
+    </StackLayout>
 </ContentPage>

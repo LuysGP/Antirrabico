@@ -25,6 +25,7 @@ namespace ProyectoAntirrabico.ViewModel
         {
             Navigation = navigation;
             MostrarMascotasAdopcion(CDerecha, CIzquierda);
+            ValidarConexionInternet();
         }
         #endregion
         #region OBJETOS

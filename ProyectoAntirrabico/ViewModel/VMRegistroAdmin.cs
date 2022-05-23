@@ -29,6 +29,7 @@ namespace ProyectoAntirrabico.ViewModel
         public VMRegistroAdmin(INavigation navigation)
         {
             Navigation = navigation;
+            ValidarConexionInternet();
         }
         #endregion
         #region OBJETOS

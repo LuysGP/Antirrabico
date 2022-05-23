@@ -25,6 +25,7 @@ namespace ProyectoAntirrabico.ViewModel
         {
             Navigation = navigation;
             MostrarMascotasPerdidas();
+            ValidarConexionInternet();
         }
         #endregion
         #region OBJETOS

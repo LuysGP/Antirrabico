@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "ProyectoAntirrabico/1.0.0": {
         "dependencies": {
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.1.0",
           "FirebaseAuthentication.net": "3.7.2",
           "FirebaseDatabase.net": "4.0.7",
           "NETStandard.Library": "2.0.3",
@@ -19,6 +20,17 @@
         },
         "runtime": {
           "ProyectoAntirrabico.dll": {}
+        }
+      },
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.1.0": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2401"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lottie.Forms.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -205,6 +217,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Com.Airbnb.Xamarin.Forms.Lottie/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-me1BrWHvNPz3UQYXK0K5BZTbBIEYpbE5JbkUsO38tnvacLLMo8vBjmf11A6so2b3sCKtj4P3ixKu9EnZEjGs5g==",
+      "path": "com.airbnb.xamarin.forms.lottie/4.1.0",
+      "hashPath": "com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512"
     },
     "FirebaseAuthentication.net/3.7.2": {
       "type": "package",

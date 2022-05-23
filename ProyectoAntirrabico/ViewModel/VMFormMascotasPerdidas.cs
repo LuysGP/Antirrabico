@@ -29,6 +29,7 @@ namespace ProyectoAntirrabico.ViewModel
         public VMFormMascotasPerdidas(INavigation navigation)
         {
             Navigation = navigation;
+            ValidarConexionInternet();
         }
         #endregion
         #region OBJETOS
